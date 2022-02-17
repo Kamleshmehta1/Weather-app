@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Poppins:wght@100;200;300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url(./plain-black-09.jpg);
+}
+
+.container {
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.w-container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.weather-app {
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: gold;
+    padding: 15px 5px 5px 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 30px;
+    border: none;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+input {
+    margin-left: 20px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    padding-left: 25px;
+}
+
+.fa-map-marker-alt,
+.fa-search {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 20px;
+    transition: color 0.5s ease-in-out;
+}
+
+.fa-map-marker-alt:hover {
+    color: #03045E;
+    font-size: 35px;
+
+}
+
+
+.fa-search:hover {
+    color: #03045E;
+    font-size: 35px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 25px;
+}
+
+.display {
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .fa-map-marker-alt,
+    .fa-search {
+        padding: 0px;
+    }
+
+    input {
+        margin: 0px;
+    }
+
+    .w-container {
+        padding: 20px 0 0 0;
+    }
+
+    .weather-app {
+        text-align: left;
+    }
+
+    button{
+        margin-right: 10px;
+    }
+
+}
+
+.city,
+.temp,
+.weath,
+.date {
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 20px 0 0 0;
+}
+
+.city,
+.weath {
+    color:gold;
+}
+
+.temp {
+    color: #ffd;
+}
+
+.date {
+    color: lemonchiffon;
+}
+
+button{
+    border: none;
+    color:white;
+    background-color: gold;
+    border-radius: 5px;
+    margin: 0px 0px 20px 50px;
+    padding: 10px;
+}
+
